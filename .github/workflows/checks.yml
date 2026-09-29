@@ -45,6 +45,9 @@ jobs:
             extra_groups: 'lower_bounds'
           # Latest: torch nightly build.
           - torch_channel: 'nightly'
+          # Upcoming Python version, not yet supported by stable torch.
+          - python-version: '3.15'
+            torch_channel: 'nightly'
 
     steps:
       - name: Checkout repository
